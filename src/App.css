@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: grid;
+  place-items: center;
+  height: 550px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input {
+  width: 70vw;
+  border-radius: 4px;
+  padding:20px ;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input:focus, .textInput:focus {
+  outline: 2px solid rgb(0, 153, 255);
+  border: none;
+}
+
+.inline
+{
+  width: 70vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 750px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .container {
+    height: 900px;
+  }
+  .textInput
+  {
+    width: 200px;
+    margin-left: calc(50% - 100px);
+  }
+}
+.crossBtn
+{
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  background-color: beige;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.textInput
+{
+  margin-left: calc(50% - 150px);
+  padding: 3px;
+  width: 300px;
+  border-radius: 4px;
+  /* margin: 5px; */
+
+}
+.textInput1
+{
+  margin-left: calc(50% - 150px);
+  padding: 3px;
+  width: 300px;
+  border-radius: 4px;
+  margin: 1px;
+
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    height: 950px;
+  }
+  .textInput, .textInput1
+  {
+    width: 200px;
+    margin-left: calc(50% - 100px);
+    
+  }
+}
+.container1{
+  width: 80vw;
+}
+.container1 button{
+  margin: 15px;
+  margin-left: calc(50% - 50px);
+}
+.ok
+{
+  width: 80vw;
+  margin-left: 10vw;
+}
+.container2
+{
+  margin-left: 150px;
+}
+.aboutContainer{
+  height: 300px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 80vw;
+  margin-left: calc(50% - 40vw);
+  background-color: #222222;
   color: white;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutContainer2{
+  height: 750px;
+  width: 85vw;
+  margin-left: calc(50% - 40vw);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutContainer2 span
+{
+  color: rgb(175, 232, 16);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.conatinerAlert
+{
+  height: 50px;
 }
